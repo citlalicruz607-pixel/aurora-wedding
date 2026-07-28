@@ -1,4 +1,108 @@
-body{
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f8f5ef;
+    color:#444;
+}
+
+.hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#f7f2eb,#ebe2d6,#f6f3ee);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top,#ffffff90,transparent 60%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    padding:30px;
+}
+
+.frase{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    line-height:1.5;
+    color:#8f735f;
+
+    margin-bottom:60px;
+}
+
+h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+
+    font-weight:500;
+
+    color:#4d4035;
+
+    margin-bottom:20px;
+
+}
+
+h1 span{
+
+    color:#b88a5d;
+
+}
+
+.fecha{
+
+    letter-spacing:8px;
+
+    margin-bottom:50px;
+
+    font-size:1rem;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    background:#b88a5d;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#9d734b;
+
 }
